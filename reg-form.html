@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+
+<body>
+    <h2><i>Välkommen!<br>Din registrering börjar här</i></h2>
+
+    <form method="post" action="confirmation-site.html">
+        <div>
+            <label for="firstName"><b>Förnamn:</b></label><br>
+            <input type="text" id="firstName" name="firstName" value="" placeholder="Skriv ditt förnamn..." required>
+        </div>
+
+        <div>
+            <label for="surname"><b>Efternamn:</b></label><br>
+            <input type="text" id="surname" name="surname" value="" placeholder="Skriv ditt efternamn..." required>
+        </div>
+        <br>
+        <div>
+            <label for="email"><b>E-post:</b></label><br>
+            <input type="email" id="email" name="email" value="" placeholder="Skriv din e-post..." autocomplete="on" required>
+        </div>
+
+        <div>
+            <label for="repeatEmail"><b>Upprepa e-post:</b></label><br>
+            <input type="email" id="repeatEmail" name="repeatEmail" value="" placeholder="Upprepa e-post..." autocomplete="off" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password"><b>Lösenord:</b></label><br>
+            <input type="password" id="password" name="password" value="" placeholder="Skriv in lösenord...">
+        </div>
+
+        <div>
+            <label for="repeatPassword"><b>Upprepa lösenord:</b></label><br>
+            <input type="password" id="repeatPassword" name="repeatPassword" value="" placeholder="Upprepa lösenord...">
+        </div>
+
+        <br>
+
+        <div>
+            <label><b>Utbildning:</b></label><br>
+            <input type="radio" id="grundskola" name="educationLevel" value="grundskola" required>
+            <label for="grundskola">Grundskola</label>
+            <input type="radio" id="gymnasium" name="educationLevel" value="gymnasium">
+            <label for="gymnasium">Gymnasienivå</label>
+            <input type="radio" id="högskola" name="educationLevel" value="högskola">
+            <label for="högskola">Högskolenivå</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label><b>Välj dina intressen:</b></label><br>
+            <label>
+                <input type="checkbox" id="coding" name="interests" value="coding" >
+                Programmera
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                Musik
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="run" name="interests" value="run">
+                Springa
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="gym" name="interests" value="gym">
+                Gymträning
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="gaming" name="interests" value="gaming">
+                Spela dator-/tvspel
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="nature" name="interests" value="nature">
+                Naturen
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="animals" name="interests" value="animals">
+                Djur
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="books" name="interests" value="books">
+                Läsa böcker
+            </label><br>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="tv" name="interests" value="tv">
+                Film/serier
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="dance" name="interests" value="dance">
+                Dansa
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="cooking" name="interests" value="cooking">
+                Matlagning
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="travel" name="interests" value="travel">
+                Resa
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="zodiac"><b>Stjärntecken:</b></label><br>
+            <select id="zodiac" name="zodiac">
+                <option value="">Välj ett alternativ...</option>
+                <option value="capricorn">Stenbocken</option>
+                <option value="aquarius">Vattumannen</option>
+                <option value="pisces">Fiskarna</option>
+                <option value="aries">Väduren</option>
+                <option value="taurus">Oxen</option>
+                <option value="gemini">Tvillingarna</option>
+                <option value="cancer">Kräftan</option>
+                <option value="leo">Lejonet</option>
+                <option value="virgo">Jungfrun</option>
+                <option value="libra">Vågen</option>
+                <option value="scorpio">Skorpionen</option>
+                <option value="sagittarius">Skytten</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="diverse"><b>Övrigt:</b></label><br>
+            <textarea id="diverse" rows="10" cols="40" placeholder="Skriv gärna övrig information här..."></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Skicka">
+        </div>
+
+        <br>
+        <br>
+        <br>
+    </form>
+
+</body>
+
+</html>
